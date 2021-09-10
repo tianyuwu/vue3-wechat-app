@@ -11,10 +11,11 @@ export default defineComponent({
   components: {},
   setup() {},
   mounted() {
+    // 以下内容替换为自己的
     useWxShare({
       title: '这是微信分享标题',
       desc: '这是微信分享描述描述',
-      imgUrl: 'http://image.brightfuture360.com/static/mystery.png',
+      imgUrl: 'http://imgurl.com/img.png',
     })
   },
 })

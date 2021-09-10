@@ -26,6 +26,25 @@ yarn dev
 - [x] 微信授权登录流程 
 - [x] 微信图文分享
 - [ ] 微信支付
+### 微信授权登录如何实现
+
+查看该文[微信授权登录流程详细分析](https://segmentfault.com/a/1190000040649617?_ea=162710050)
+
+### 如何配置微信图文分享
+```
+import { useWxShare } from '@/hooks/useWxShare'
+
+export default defineComponent({
+  mounted() {
+    // 以下内容替换为自己的
+    useWxShare({
+      title: '这是微信分享标题',
+      desc: '这是微信分享描述描述',
+      imgUrl: 'http://imgurl.com/img.png',
+    })
+  },
+})
+```
 
 ## 依赖
 ```
