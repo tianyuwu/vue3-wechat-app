@@ -10,10 +10,9 @@
 ## 如何使用
 克隆本项目并进入项目根目录
 ```
-git clone https://github.com/sss
-cd xxx
+git clone https://github.com/tianyuwu/vue3-wechat-app.git
+cd vue3-wechat-app
 ```
-
 安装依赖
 ```
 yarn
@@ -22,6 +21,11 @@ yarn
 ```
 yarn dev
 ```
+## 迭代计划
+
+- [x] 微信授权登录流程 
+- [x] 微信图文分享
+- [ ] 微信支付
 
 ## 依赖
 ```
