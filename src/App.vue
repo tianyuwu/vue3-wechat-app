@@ -6,6 +6,23 @@
   <router-view></router-view>
 </template>
 
+<script>
+import { defineComponent } from "vue";
+import { useWxSDK } from "@/common/hooks/useWxSDK";
+import { commonStore } from "@/store/modules/common";
+
+export default defineComponent({
+  setup() {},
+  mounted() {
+    const { isiOSWechat } = useWxSDK();
+    if (isiOSWechat()) {
+      const url = window.location.href.split("#")[0];
+      commonStore.saveVisitUrl(url);
+    }
+  },
+});
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
