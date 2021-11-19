@@ -17,6 +17,10 @@ cd vue3-wechat-app
 ```
 yarn
 ```
+修改.env中设置的后端接口的域名
+```
+VITE_API_HOST=http://yourdomain.com
+```
 启动开发Server
 ```
 yarn dev

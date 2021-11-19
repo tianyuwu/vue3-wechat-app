@@ -8,7 +8,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import { useWxSDK } from "@/common/hooks/useWxSDK";
+import { useWxSDK } from "@/hooks/useWxSDK";
 import { commonStore } from "@/store/modules/common";
 
 export default defineComponent({
